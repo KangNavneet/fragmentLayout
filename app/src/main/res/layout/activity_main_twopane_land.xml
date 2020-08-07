@@ -2,14 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="2">
 
     <fragment
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:id="@+id/settings_fragment"
         android:name="com.navneetkang.uglyapp.settingFragment"
-        android:layout_weight="1"
+        android:layout_weight=".7"
         tools:ignore="Suspicious0dp" />
 
     <fragment
@@ -17,6 +18,6 @@
         android:layout_height="match_parent"
         android:id="@+id/main_fragment"
         android:name="com.navneetkang.uglyapp.scorekeeperFragment"
-        android:layout_weight="1"
+        android:layout_weight="1.3"
         tools:ignore="Suspicious0dp" />
 </LinearLayout>
