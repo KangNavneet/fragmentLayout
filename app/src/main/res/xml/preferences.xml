@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <CheckBoxPreference
+        android:background="@color/colorPrimaryDark"
+        android:key="pref_remember_total"
+        android:title="Remember Total"
+        android:summary="Remember The Last Value When App Is Closed"
+        />
+
+<!--
+    <ListPreference
+        android:key="pref_rounding"
+        android:title="Rounding"
+        android:summary="Round the value"
+        android:entries="@array/rounding_keys"
+        android:entryValues="@array/rounding_values"
+        />
+
+-->
+
+    <SwitchPreference
+        android:key="pref_dark_theme"
+        android:title="Use A Dark Theme"
+        android:summary="Dark Theme prefered for better battery usage and reduces eye strain"
+        />
+</PreferenceScreen>

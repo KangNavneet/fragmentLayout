@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_style"
+    android:id="@+id/main_fragment">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollViewBackground"
+        >
+        <TableRow
+            android:gravity="center"
+            android:weightSum="2"
+            >
+
+         <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="CRICKET"
+                android:layout_weight="1"
+          />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cricket"
+                android:layout_weight="1"
+                android:padding="15dp"
+                />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="15dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Team A" />
+
+                    <TextView
+                        android:id="@+id/teamAScore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0" />
+                    <Button
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="👉Team A Score " />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#800080"
+                        android:textColor="#fff"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:text="👇ADD RUN" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <Button
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/team_a_decrease"
+                            android:layout_weight="1"
+                            android:text="-" />
+
+
+                        <Button
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/team_a_increase"
+                            android:layout_weight="1"
+                            android:text="+" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Team B"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/teamBScore"
+                        android:text="0" />
+                    <Button
+                        android:id="@+id/active_teamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="👉Team B Score" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#800080"
+                        android:textColor="#fff"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:text="👇ADD RUN" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <Button
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:id="@+id/team_b_decrease"
+                            android:layout_weight="1"/>
+
+
+                        <Button
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/team_b_increase"
+                            android:text="+"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+
+            >
+
+            <RadioGroup
+                android:id="@+id/scoreChange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="40dp"
+
+                android:checkedButton="@id/score_1"
+                android:gravity="center">
+
+                <RadioButton
+                    android:id="@+id/score_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1 Score" />
+
+                <RadioButton
+                    android:id="@+id/score_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4 Score" />
+
+                <RadioButton
+                    android:id="@+id/score_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6 Score" />
+            </RadioGroup>
+
+
+
+
+        </TableRow>
+
+
+
+
+    </TableLayout>
+
+</ScrollView>
